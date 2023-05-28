@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --outfit: "Outfit", sans-serif;
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-BG: hsl(217, 54%, 11%);
+  --card-BG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: var(--outfit);
+  font-size: 18px;
+  background-color: var(--main-BG);
+}
+
+.img {
+  display: block;
+  margin: 25px auto;
+  width: 280px;
+  border-radius: 10px;
+}
+
+.card-field {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 330px;
+  border-radius: 15px;
+  background-color: var(--card-BG);
+}
+.card-field .description {
+  padding: 0 25px;
+}
+.card-field .txt {
+  margin-bottom: 15px;
+}
+.card-field h1 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--white);
+}
+.card-field p {
+  font-size: 0.9em;
+  font-weight: 300;
+  color: var(--soft-blue);
+  line-height: 25px;
+}
+.card-field .details {
+  display: flex;
+  margin-bottom: 10px;
+}
+.card-field .details .amount {
+  display: flex;
+  width: 50%;
+}
+.card-field .details .amount .icon {
+  margin-right: 5px;
+}
+.card-field .details .price > p {
+  font-weight: 500;
+  color: var(--cyan);
+}
+.card-field .details .time-left {
+  justify-content: end;
+}
+.card-field hr {
+  color: var(--line);
+}
+.card-field footer {
+  display: flex;
+  margin: 20px 0;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+.card-field footer .avatar {
+  width: 35px;
+  height: 35px;
+  margin-right: 25px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+.card-field footer a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+h1:hover,
+.author:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+@media (min-width: 768px) {
+  .card-field {
+    width: 355px;
+  }
+  .card-field .img {
+    width: 300px;
+  }
+}/*# sourceMappingURL=main.css.map */
